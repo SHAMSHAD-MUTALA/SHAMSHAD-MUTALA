@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #F3F4F6; /* Light Gray */
+}
+
+h1 {
+    color: #1E3A8A; /* Royal Blue */
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #1E3A8A; /* Royal Blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #152C5B; /* Darker Royal Blue */
+}
+
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #D4AF37; /* Gold accent */
+}

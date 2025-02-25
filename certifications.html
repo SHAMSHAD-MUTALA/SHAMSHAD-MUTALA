@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CERTIFICATIONS</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f9f8e9;
+            margin: 20px;
+            text-align: center;
+        }
+        .certifications-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .certificate-card {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden; /* Prevent overflow */
+        }
+        .certificate-card img,
+        .certificate-card embed {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: contain; /* Ensures images fit within the container */
+        }
+        .certificate-card h2 {
+            margin: 10px 0;
+            font-size: 1rem; /* Adjusted font size */
+        }
+        .certificate-card p {
+            font-size: 12px;
+            color: #444;
+        }
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 50%; /* Adjusted width for smaller size */
+            height: auto;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-weight: bold; font-size: 3rem; color: #1E3A8A; margin-bottom: 40px;">CERTIFICATIONS</h1>
+
+    <h2 style="color: #1E3A8A; margin: 30px 0 20px; font-size: 1.3rem; text-align: left;">INTERNSHIPS</h2>
+    <div class="certifications-container">
+        <div class="certificate-card" onclick="openModal('Teachnook internship certificate.jpg')">
+            <img src="Teachnook internship certificate.jpg" alt="Teachnook Internship" style="max-height: 250px; object-fit: contain;">
+            <h2>Teachnook Internship</h2>
+            <p>Issued by: Teachnook</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Coursera certification.jpg')">
+            <img src="Coursera certification.jpg" alt="Coursera Certification" style="max-height: 250px; object-fit: contain;">
+            <h2>Coursera Certification</h2>
+            <p>Issued by: Coursera</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Cisco virtual internship .jpg')">
+            <img src="Cisco virtual internship .jpg" alt="Cisco Virtual Internship" style="max-height: 250px; object-fit: contain;">
+            <h2>Cisco Virtual Internship</h2>
+            <p>Issued by: Cisco</p>
+        </div>
+    </div>
+    <div class="certifications-container">
+        <div class="certificate-card" onclick="openModal('SACL Internship certificate.jpg')">
+            <img src="SACL Internship certificate.jpg" alt="SACL Internship" style="max-height: 250px; object-fit: contain;">
+            <h2>SACL Internship</h2>
+            <p>Issued by: SACL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('AI_ML_INNOVATE_INTERNSHIP.jpg')">
+            <img src="AI_ML_INNOVATE_INTERNSHIP.jpg" alt="AI ML Innovate Internship" style="max-height: 250px; object-fit: contain;">
+            <h2>AI ML Innovate Internship</h2>
+            <p>Issued by: Innovate</p>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <h2 style="color: #1E3A8A; margin: 30px 0 20px; font-size: 1.3rem; text-align: left;">PROJECTS</h2>
+    <div class="certifications-container">
+        <div class="certificate-card" onclick="openModal('AI_ML_INNOVATE_INTERNSHIP.jpg')">
+            <img src="AI_ML_INNOVATE_INTERNSHIP.jpg" alt="AI ML Innovate Internship" style="max-height: 250px; object-fit: contain;">
+            <h2>AI ML Innovate Internship</h2>
+            <p>Issued by: Innovate</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('AI_ML_INNOVATE_INTERNSHIP_OFFERLETTER.jpg')">
+            <img src="AI_ML_INNOVATE_INTERNSHIP_OFFERLETTER.jpg" alt="AI ML Innovate Internship Offer Letter" style="max-height: 250px; object-fit: contain;">
+            <h2>AI ML Innovate Offer Letter</h2>
+            <p>Issued by: Innovate</p>
+        </div>
+    </div>
+
+    <h2 style="color: #1E3A8A; margin: 30px 0 20px; font-size: 1.3rem; text-align: left;">COURSES & CERTIFICATIONS</h2>
+    <div class="certifications-container">
+        <div class="certificate-card" onclick="openModal('ETHICS.jpg')">
+            <img src="ETHICS.jpg" alt="Ethics Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Ethics Certificate</h2>
+            <p>Issued by: NPTEL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('CN.jpg')">
+            <img src="CN.jpg" alt="Computer Networks Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Computer Networks Certificate</h2>
+            <p>Issued by: NPTEL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('CNIP.jpg')">
+            <img src="CNIP.jpg" alt="CNIP Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>CNIP Certificate</h2>
+            <p>Issued by: NPTEL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('NPTEL_MIS.jpg')">
+            <img src="NPTEL_MIS.jpg" alt="NPTEL MIS Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>NPTEL MIS Certificate</h2>
+            <p>Issued by: NPTEL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('SIMPLILEARN_DATA_VISUALISATION.jpg')">
+            <img src="SIMPLILEARN_DATA_VISUALISATION.jpg" alt="Data Visualization Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Data Visualization Certificate</h2>
+            <p>Issued by: Simplilearn</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('CCNA_200-301_NETWORK_FUNDAMENTALS ONLINE.jpg')">
+            <img src="CCNA_200-301_NETWORK_FUNDAMENTALS ONLINE.jpg" alt="CCNA Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>CCNA Certificate</h2>
+            <p>Issued by: Simplilearn</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Cloud computing_SIMPLILEARN.jpg')">
+            <img src="Cloud computing_SIMPLILEARN.jpg" alt="Cloud Computing Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Cloud Computing Certificate</h2>
+            <p>Issued by: Simplilearn</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('SHAMSHAD COURSERA.jpg')">
+            <img src="SHAMSHAD COURSERA.jpg" alt="Coursera Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Coursera Certificate</h2>
+            <p>Issued by: Coursera</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Coursera certification.jpg')">
+            <img src="Coursera certification.jpg" alt="Coursera Certification" style="max-height: 250px; object-fit: contain;">
+            <h2>Coursera Certification</h2>
+            <p>Issued by: Coursera</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Mahindra Employability Skill Program Certificate.jpg')">
+            <img src="Mahindra Employability Skill Program Certificate.jpg" alt="Employability Skill Program Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Employability Skill Program Certificate</h2>
+            <p>Issued by: Mahindra</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Rubicon.jpg')">
+            <img src="Rubicon.jpg" alt="Rubicon Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Rubicon Certificate</h2>
+            <p>Issued by: Rubicon</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Python course.jpg')">
+            <img src="Python course.jpg" alt="Python Course Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Python Course Certificate</h2>
+            <p>Issued by: Udemy</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('MICROSOFT_AZURE_FUNDAMENTALS.jpg')">
+            <img src="MICROSOFT_AZURE_FUNDAMENTALS.jpg" alt="Microsoft Azure Fundamentals Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Microsoft Azure Fundamentals Certificate</h2>
+            <p>Issued by: Microsoft</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('AI Certificate .jpg')">
+            <img src="AI Certificate .jpg" alt="AI Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>AI Certificate</h2>
+            <p>Issued by: Great Learning</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('Django certificate.jpg')">
+            <img src="Django certificate.jpg" alt="Django Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>Django Certificate</h2>
+            <p>Issued by: Django Foundation</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('NPTEL_MEMO.jpg')">
+            <img src="NPTEL_MEMO.jpg" alt="NPTEL Memo Certificate" style="max-height: 250px; object-fit: contain;">
+            <h2>NPTEL Memo Certificate</h2>
+            <p>Issued by: NPTEL</p>
+        </div>
+        <div class="certificate-card" onclick="openModal('AI_ML_INNOVATE_INTERNSHIP_OFFERLETTER.jpg')">
+            <img src="AI_ML_INNOVATE_INTERNSHIP_OFFERLETTER.jpg" alt="AI ML Innovate Internship Offer Letter" style="max-height: 250px; object-fit: contain;">
+            <h2>AI ML Innovate Offer Letter</h2>
+            <p>Issued by: Innovate</p>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="certificateModal" class="modal" style="display:none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" style="display:none;">
+        <embed id="modalPDF" class="modal-content" type="application/pdf" style="display:none;">
+    </div>
+
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('certificateModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalPDF = document.getElementById('modalPDF');
+
+            if (src.endsWith('.pdf')) {
+                modalPDF.src = src;
+                modalPDF.style.display = 'block';
+                modalImage.style.display = 'none';
+            } else {
+                modalImage.src = src;
+                modalImage.style.display = 'block';
+                modalPDF.style.display = 'none';
+            }
+            modal.style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('certificateModal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+</html>
