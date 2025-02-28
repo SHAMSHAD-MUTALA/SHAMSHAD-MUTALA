@@ -1,8 +1,7 @@
 ## Hi there 👋  
 
 I'm **Shamshad Mutala**, an aspiring **Software Engineer & Full Stack Developer** passionate about problem-solving, AI/ML, and building impactful projects. 🚀  
-
-🔭 **Currently working on:** CTR Prediction ML Model | AICTE Internship Project  
+ 
 🌱 **Currently learning:** Advanced AI/ML, React.js, and System Design  
 💬 **Ask me about:** Web Development, Data Structures, AI/ML, and Power BI  
 📫 **Reach me at:** [shamshadmutala@gmail.com](mailto:shamshadmutala@gmail.com)  
