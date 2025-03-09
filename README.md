@@ -5,7 +5,6 @@ I'm **Shamshad Mutala**, an aspiring **Software Engineer & Full Stack Developer*
 🌱 **Currently learning:** Advanced AI/ML, React.js, and System Design  
 💬 **Ask me about:** Web Development, Data Structures, AI/ML, and Power BI  
 📫 **Reach me at:** [shamshadmutala@gmail.com](mailto:shamshadmutala@gmail.com)  
-MY-PORTFOLIO: https://shamshad-mutala-my-portfolio.netlify.app/
 ---
 
 ### 🔥 Skills  
